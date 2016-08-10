@@ -16,7 +16,7 @@
 2. 修改examples       
 
 ### 开发 
-1. 初始化工程       
+1. [初始化工程](https://github.com/vczero/weex-learning/blob/master/001_hello%20world.md)                        
 2. 了解工程（webpack & package.json）    
 3. 模版   
 4. 样式 & 布局  
