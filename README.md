@@ -12,8 +12,8 @@
 
 ## 入门     
 ### 体验         
-1. [初次体验](https://github.com/vczero/weex-learning/blob/master/001_hello%20world.md)      
-2. [修改examples](https://github.com/vczero/weex-learning/blob/master/002_modify_example.md)       
+1. [weex初体验](https://github.com/vczero/weex-learning/blob/master/001_hello%20world.md)      
+2. [了解Weex源码结构，修改example](https://github.com/vczero/weex-learning/blob/master/002_modify_example.md)       
 
 ### 开发 
 1. 初始化工程                       

@@ -1,4 +1,4 @@
-## 002 下载Weex源码，修改example         
+## 第2篇 了解Weex源码结构，修改example         
 其实，前面一节，我们发现，写一个简单的带有样式的界面还是挺简单的。这一节，我们不学习如何去了解一个工程，我们去学习了解官方的github代码库。一方面，可以让大家体验修改Demo的乐趣，同时可以大家可以直观的了解一个开源代码库的结构。         
 
 ## 1. 下载Weex源码     
@@ -83,8 +83,13 @@ On Android Platform , Weex code is executed in [weex_v8core](https://github.com/
 	http://127.0.0.1:12580        
     
 ## 4.修改example            
+![](imgs/002_4.png)            
+其中index.we是入口文件。因此可以在example中增加一个文件。然后在index.we中增加一个name和title。          
+![](imgs/002_5.png)         
 
+点击模拟器刷新按钮即可查看效果。      
+ 
 
-
-## 5.如何学习    
+## 5.如何学习       
+到这里基本上已经可以修改个钟demo，查看各种效果。当不了解一个组件和api如何使用时，查阅官方文档和阅读Demo就显得尤为重要。              
      
