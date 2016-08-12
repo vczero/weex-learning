@@ -16,7 +16,7 @@
 2. [了解Weex源码结构，修改example](http://vczero.github.io/weex/002_modify_example.html)       
 
 ### 开发 
-1. 初始化工程                       
+1. [初始化工程干了一件什么事儿](http://vczero.github.io/weex/003_init_project.html)                       
 2. 了解工程（webpack & package.json）    
 3. 模版   
 4. 样式 & 布局  
