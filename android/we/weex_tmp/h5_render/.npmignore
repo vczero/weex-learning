@@ -1,0 +1,22 @@
+# dev
+bower_components
+bower.json
+.jscsrc
+
+# e2e tests
+test
+
+# Logs
+npm-debug.log
+
+# Dependency directory
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# source
+src
+
+# other
+webpack.config.js
