@@ -1,4 +1,7 @@
-## 开发HelloWorld程序（Android原生）
+## 开发HelloWorld程序（Android原生）      
+作者：@guogai          
+
+    
 - 1. 打开AndroidStudio新建一个Project
    
   ![](androidImgs/create_native_project_1.png)

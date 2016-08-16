@@ -1,4 +1,6 @@
-## 环境配置
+## 环境配置       
+作者： @guogai       
+
 - 1.下载并安装Jdk [传送门](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)，下载完成以后，按照提示一步一步执行即可。
 - 2.配置Jdk [传送门](http://jingyan.baidu.com/article/6dad5075d1dc40a123e36ea3.html)。
 - 3.下载AndroidStudio [传送门](http://www.androiddevtools.cn/)，我一般选择推荐安装的那个。不要想着去谷歌官网下载，不要问为什么。
