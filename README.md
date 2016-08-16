@@ -29,21 +29,31 @@
 1. 工程化代码       
 2. 工程化套件         
 
-## 应用参考        
+### 应用参考        
 1. 微阅读应用 (即将发布)         
 2. 丫丫学字应用（开发中）         
 
-## 组件的扩展   
+### 组件的扩展   
 1. H5扩展     
 2. iOS扩展    
 3. Android 扩展     
 4. 发布你的组件        
 
-## 提出问题、解决问题      
+### 提出问题、解决问题      
 1. 总结问题并抽象     
 2. 回到开源社区             
 
-## 常见问题汇总和过滤    
+### 常见问题汇总和过滤    
   
 
-## Android相关    
+## Android相关            
+其实不应该说Weex for Android, Weex for iOS, Weex for H5.因为,Weex本来就打通了三端一致.但是,业界也存在一个问题,那就是同时能够熟练掌握Android, iOS,前端的同学很少.
+这也归于一句话:术业有专有专攻.因此,Weex Android相关指南是Android同学写给前端同学或者iOS同学看的入门指南,更多的是涉及Android相关的话题.这一块,Android的同学做的要专业些.         
+开发者社区本来就需要不同的声音,因此也希望更多的开发者积极贡献社区.        
+这里由开发者[guogailee](https://github.com/guogailee)贡献
+
+### 目录
+- [前言](http://vczero.github.io/weex/android/004_Preface.html)
+- [环境配置](http://vczero.github.io/weex/android/001_EnvironmentConfig.html)
+- [开发HelloWorld程序（Android原生）](http://vczero.github.io/weex/android/002_HelloWorldBuildInNative.html)
+- [开发HelloWorld程序（Weex开发）](http://vczero.github.io/weex/android/003_HelloWorldBuildInWeex.html) 
