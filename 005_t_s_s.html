@@ -1,0 +1,713 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>005_t_s_s</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+</head>
+<body>
+<h2 id="toc_0">第5篇 模版、样式、JavaScript</h2>
+
+<p>模版的概念，应该是前端借鉴了后端，不仅可以做到逻辑与视图分离，进行数据绑定，还可以提高开发效率，减少维护成本。Weex的模板语法也是极简的。      </p>
+
+<h2 id="toc_1">一、template</h2>
+
+<h3 id="toc_2">模版概述</h3>
+
+<p>在.we文件中，template里面的内容就是视图模版。例如：      </p>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;!-- (required) the structure of page --&gt;
+&lt;/template&gt;</code></pre>
+
+<p>有几点需要注意的：<br>
+1）不建议template的内容层次太深<br>
+2）template内必须包含唯一的根节点作为父容器, div就是一个很好的选择       </p>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;div&gt;
+    &lt;div&gt;子组件&lt;/div&gt;
+    &lt;div&gt;子组件&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+
+<p>3）template内部组件必须是weex官方提供的组件。例如：div、text、input、web等。这里的组件就不是单纯的html标签了，更加丰富的含义应该是三端一致的基础组件。         </p>
+
+<h3 id="toc_3">模版逻辑</h3>
+
+<p>一般情况，我们可以在模版中进行逻辑判断和表达式运算。Weex也做了基础的逻辑运算工作。      </p>
+
+<ul>
+<li>if<br></li>
+</ul>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;div&gt;
+    &lt;div if=&quot;{{shown}}&quot;&gt;子组件&lt;/div&gt;
+    &lt;div&gt;子组件&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+
+<p>shown为bool类型的变量。如果为true，则显示该组件，否则移除该组件。      </p>
+
+<ul>
+<li>repeat<br></li>
+</ul>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;container&gt;
+    &lt;container repeat=&quot;{{list}}&quot;&gt;
+      &lt;image src=&quot;{{avatar}}&quot;&gt;&lt;/image&gt;
+      &lt;text&gt;{{nickname}}&lt;/text&gt;
+    &lt;/container&gt;
+  &lt;/container&gt;
+&lt;/template&gt;</code></pre>
+
+<p>repeat接受循环的数组变量。repeat内部组件引用数组中某一元素的属性，例如list[i].avatar。     </p>
+
+<ul>
+<li>$index<br></li>
+</ul>
+
+<pre><code class="language-markup">&lt;div repeat=&quot;{{list}}&quot;&gt;
+  &lt;text&gt;No. {{$index + 1}}&lt;/text&gt;
+&lt;div&gt;</code></pre>
+
+<p>可以通过$index 拿到数组遍历的索引。    </p>
+
+<ul>
+<li>key and value<br></li>
+</ul>
+
+<pre><code class="language-markup">&lt;div repeat=&quot;{% raw %}{{v in list}}{% endraw %}&quot;&gt;
+  &lt;text&gt;No. {{$index + 1}}, {{v.nickname}}&lt;/text&gt;
+&lt;/div&gt;
+
+&lt;div repeat=&quot;{% raw %}{{(k, v) in list}}{% endraw %}&quot;&gt;
+  &lt;text&gt;No. {{k + 1}}, {{v.nickname}}&lt;/text&gt;
+&lt;/div&gt;</code></pre>
+
+<h2 id="toc_4">二、样式</h2>
+
+<p>Weex的样式基本上是web标准样式的子集。Weex样式分为内联样式和类样式。      </p>
+
+<pre><code class="language-markup">&lt;div style=&quot;width:100;height:100;margin-left:10;&quot;&gt;&lt;/div&gt;</code></pre>
+
+<pre><code class="language-markup">&lt;template&gt;
+    &lt;div class=&quot;header_container border&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;     
+&lt;style&gt;
+    .header_container{
+        width:100;
+        height:100;
+        margin-left:10;
+    }
+    .border{
+        border-width:1;
+    }
+&lt;/style&gt;</code></pre>
+
+<p>我们可以看到内联样式基本上和Web标准一样。但是这里不要使用px，因为默认的宽度和高度单位就是px。<br>
+ 类样式，我们写在<code>&lt;style&gt;</code>里面，基本和Web标准一致。但是我们需要注意几个问题：       </p>
+
+<h3 id="toc_5">1. Weex支持哪些样式？</h3>
+
+<p>1）样式的形式：内联style属性、style标签内部类样式<br>
+2）基础样式：包括盒子模型和Flexbox<br>
+    <img src="imgs/005_01.png" alt=""><br>
+     Weex支持的公共样式在这里都基本说明了：http://alibaba.github.io/weex/doc/references/common-style.html<br>
+3) 文本的样式：因为text组件是一个相对特殊的组件，有着自己的特有属性。例如font-size设置字体的大小。lines设置文本的行数。可以参考：<br>
+http://alibaba.github.io/weex/doc/references/text-style.html<br>
+http://alibaba.github.io/weex/doc/components/text.html   </p>
+
+<h3 id="toc_6">2. 样式是否支持数据绑定</h3>
+
+<p>答案：支持。      </p>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;container&gt;
+    &lt;text style=&quot;font-size: {{fontSize}};&quot;&gt;Alibaba&lt;/text&gt;
+    &lt;text class=&quot;large {{textClass}}&quot;&gt;Weex Team&lt;/text&gt;
+  &lt;/container&gt;
+&lt;/template&gt;
+&lt;style&gt;
+  .large {font-size: 32;}
+  .highlight {color: #ff0000;}
+&lt;/style&gt;
+&lt;script&gt;
+  module.exports = {
+    data: {
+      fontSize: 32,
+      textClass: &#39;highlight&#39;
+    }
+  }
+&lt;/script&gt;</code></pre>
+
+<p>例如fontSize、textClass就是数据绑定。如果不了解数据绑定，可以移步到下一节。      </p>
+
+<h2 id="toc_7">三、JavaScript</h2>
+
+<p>首先，这里我们需要明确JavaScript的范围以及JavaScript如何使用。在Weex中，我们使用 mustache的语法形式<code>{{}}</code>来进行数据绑定。我们在script中的data属性上进行的数据绑定，都会自动的映射到视图，从而进行视图的更新。 例如：  </p>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;container&gt;
+    &lt;text style=&quot;font-size: {{size}}&quot;&gt;{{title}}&lt;/text&gt;
+  &lt;/container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  module.exports = {
+    data: {
+      size: 48,
+      title: &#39;Alibaba Weex Team&#39;
+    }
+  }
+&lt;/script&gt;      </code></pre>
+
+<p>这里，我们不仅对样式进行了数据绑定，同样对text组件中的文本进行了数据绑定。     </p>
+
+<p>当然，weex也支持，简单的表达式，例如：       </p>
+
+<pre><code class="language-markup">&lt;template&gt;
+  &lt;container style=&quot;flex-direction: row;&quot;&gt;
+    &lt;text&gt;{{firstName + &#39; &#39; + lastName}}&lt;/text&gt;
+  &lt;/container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  module.exports = {
+    data: {
+      firstName: &#39;John&#39;,
+      lastName: &#39;Smith&#39;
+    }
+  }
+&lt;/script&gt;</code></pre>
+
+<p>我们将<code>firstName + &#39; &#39; + lastName</code>进行了运算。<br>
+ 那么，如果我们的模板中有大量的逻辑。我们怎么办？        </p>
+
+<pre><code class="language-markup"> &lt;template&gt;
+  &lt;container style=&quot;flex-direction: row;&quot;&gt;
+    &lt;text&gt;{{fullName}}&lt;/text&gt;
+    &lt;text onclick=&quot;changeName&quot; style=&quot;margin-left:10px;&quot;&gt;CHANGE NAME&lt;/text&gt;
+  &lt;/container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  module.exports = {
+    data: {
+      firstName: &#39;John&#39;,
+      lastName: &#39;Smith&#39;
+    },
+    computed: {
+      fullName: {
+        get: function() {
+          return this.firstName + &#39; &#39; + this.lastName
+        },
+
+        set: function(v) {
+          var s = v.split(&#39; &#39;)
+          this.firstName = s[0]
+          this.lastName = s[1]
+        }
+      }
+    },
+    methods: {
+      changeName: function() {
+        this.fullName = &#39;Terry King&#39;
+      }
+    }
+  }
+&lt;/script&gt;</code></pre>
+
+<p>我们可以使用computed对字段进行相关的逻辑运算。     </p>
+
+<p>那么，我们又如何给一个元素绑定事件？<br>
+ 直接onclick就好，注意是全部小写。例如：      </p>
+
+<pre><code class="language-markup"> &lt;template&gt;
+  &lt;text onclick=&quot;toggle&quot;&gt;Toggle&lt;/text&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  module.exports = {
+    methods: {
+      toggle: function () {
+        // todo
+      }
+    }
+  }
+&lt;/script&gt;</code></pre>
+
+<p>每个组件有各自的事件，因此，可以通过  http://alibaba.github.io/weex/doc 多多阅读和了解。</p>
+
+<h2 id="toc_8">四、组件的范畴和需要关注的点</h2>
+
+<p>在HTML中，我们称div这些为标签。但是，这里，我们建议text、div、input、a、web等等这些称之为组件。因为他们是跨三端协作一致的结果。那么作为一个组件，我们需要关注什么呢？     </p>
+
+<ul>
+<li>组件都是成对出现 </li>
+</ul>
+
+<pre><code class="language-markup">//good case
+&lt;list&gt;&lt;/list&gt;
+//bad case
+&lt;list/&gt;  </code></pre>
+
+<ul>
+<li><p>组件的内容或者子组件是什么？<br>
+例如text组件：This component supports no child components but a text content.<br>
+因此，在使用text组件时不要有子组件，但是可以有文本内容。     </p></li>
+<li><p>组件支持的属性有哪些？<br>
+比如list组件是否支持纵向／横向滚动，这些都是需要阅读文档时需要注意的。      </p></li>
+<li><p>组件支持什么样的样式     </p></li>
+<li><p>组件支持什么样的事件<br>
+比如input组件是不允许子组件的，同时不支持click事件，支持input/change事件。这些是需要我们关注的点。     </p></li>
+<li><p>Weex文档中未出现的组件能否使用？<br>
+可以，自己把他扩展成三端一致的组件呗，:)     </p></li>
+</ul>
+
+<script type="text/javascript">
+self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{};var Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var i=r[e];if(2==arguments.length){a=arguments[1];for(var l in a)a.hasOwnProperty(l)&&(i[l]=a[l]);return i}var o={};for(var s in i)if(i.hasOwnProperty(s)){if(s==n)for(var l in a)a.hasOwnProperty(l)&&(o[l]=a[l]);o[s]=i[s]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),i=0;a=r[i++];)t.highlightElement(a,e===!0,n)},highlightElement:function(a,r,i){for(var l,o,s=a;s&&!e.test(s.className);)s=s.parentNode;if(s&&(l=(s.className.match(e)||[,""])[1],o=t.languages[l]),o){a.className=a.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,s=a.parentNode,/pre/i.test(s.nodeName)&&(s.className=s.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var g=a.textContent;if(g){g=g.replace(/^(?:\r?\n|\r)/,"");var u={element:a,language:l,grammar:o,code:g};if(t.hooks.run("before-highlight",u),r&&self.Worker){var c=new Worker(t.filename);c.onmessage=function(e){u.highlightedCode=n.stringify(JSON.parse(e.data),l),t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,i&&i.call(u.element),t.hooks.run("after-highlight",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code}))}else u.highlightedCode=t.highlight(u.code,u.grammar,u.language),t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,i&&i.call(a),t.hooks.run("after-highlight",u)}}},highlight:function(e,a,r){var i=t.tokenize(e,a);return n.stringify(t.util.encode(i),r)},tokenize:function(e,n){var a=t.Token,r=[e],i=n.rest;if(i){for(var l in i)n[l]=i[l];delete n.rest}e:for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var o=n[l];o="Array"===t.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var g=o[s],u=g.inside,c=!!g.lookbehind,f=0,h=g.alias;g=g.pattern||g;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){g.lastIndex=0;var m=g.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),O=[p,1];b&&O.push(b);var N=new a(l,u?t.tokenize(m,u):m,h);O.push(N),w&&O.push(w),Array.prototype.splice.apply(r,O)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,i=0;r=a[i++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("[object Array]"==Object.prototype.toString.call(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var i={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==i.type&&(i.attributes.spellcheck="true"),e.alias){var l="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(i.classes,l)}t.hooks.run("wrap",i);var o="";for(var s in i.attributes)o+=s+'="'+(i.attributes[s]||"")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'" '+o+">"+i.content+"</"+i.tag+">"},!self.document)return self.addEventListener?(self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code;self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r,t.languages[a])))),self.close()},!1),self.Prism):self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism);
+</script>
+<script type="text/javascript">
+Prism.languages.markup={comment:/<!--[\w\W]*?-->/g,prolog:/<\?.+?\?>/,doctype:/<!DOCTYPE.+?>/,cdata:/<!\[CDATA\[[\w\W]*?]]>/i,tag:{pattern:/<\/?[\w:-]+\s*(?:\s+[\w:-]+(?:=(?:("|')(\\?[\w\W])*?\1|[^\s'">=]+))?\s*)*\/?>/gi,inside:{tag:{pattern:/^<\/?[\w:-]+/i,inside:{punctuation:/^<\/?/,namespace:/^[\w-]+?:/}},"attr-value":{pattern:/=(?:('|")[\w\W]*?(\1)|[^\s>]+)/gi,inside:{punctuation:/=|>|"/g}},punctuation:/\/?>/g,"attr-name":{pattern:/[\w:-]+/g,inside:{namespace:/^[\w-]+?:/}}}},entity:/&#?[\da-z]{1,8};/gi},Prism.hooks.add("wrap",function(t){"entity"===t.type&&(t.attributes.title=t.content.replace(/&amp;/,"&"))});
+</script>
+</body>
+
+</html>
