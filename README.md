@@ -10,20 +10,15 @@
 这里，我先"拿砖敲门"，给希望入门的同学做一个指引，然后一起Happy，一起共建生态。        
 
 
-## 入门     
-### 体验         
-1. [weex初体验](http://vczero.github.io/weex/001_helloworld.html)      
-2. [了解Weex源码结构，修改example](http://vczero.github.io/weex/002_modify_example.html)       
-
-### 开发 
-1. [初始化工程干了一件什么事儿](http://vczero.github.io/weex/003_init_project.html)                       
-2. 了解工程（webpack & package.json）    
-3. 模版   
-4. 样式 & 布局  
-5. 发挥JavaScript的能力     
-6. 动态数据服务（可理解Ajax、Fetch）      
-7. 页面跳转／路由控制    
-8. 开发上层UI组件     
+## WEEX    
+### WEEX快速入门        
+1. [weex初体验](https://vczero.github.io/weex-learning/001_helloworld.html)      
+2. [了解Weex源码结构，修改example](https://vczero.github.io/weex-learning/002_modify_example.html)       
+3. [初始化工程干了一件什么事儿](https://vczero.github.io/weex-learning/003_init_project.html)                       
+4. [了解工程](https://vczero.github.io/weex-learning/004_project.html)    
+5. [模版、样式、JavaScript](https://vczero.github.io/weex-learning/005_t_s_s.html)   
+6. [导航、页面跳转、stream、webview](https://vczero.github.io/weex-learning/006_navigation.html)  
+    
 
 ### 工程化
 1. 工程化代码       
