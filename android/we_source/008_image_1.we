@@ -1,0 +1,16 @@
+<template>
+    <div>
+	    <text>resize=stretch</text>
+        <image class="icon1" src="http://www.bz55.com/uploads1/allimg/120312/1_120312100435_8.jpg"></image>
+		<text>resize=cover</text>
+        <image class="icon2" src="http://www.bz55.com/uploads1/allimg/120312/1_120312100435_8.jpg"></image>
+		<text>resize=contain</text>
+        <image class="icon3" src="http://www.bz55.com/uploads1/allimg/120312/1_120312100435_8.jpg"></image>
+    </div>
+</template>
+
+<style>
+  .icon1 { width: 400; height: 200; resize:stretch; top: 5;}
+  .icon2 { width: 400; height: 200; resize:cover; top: 5;}
+  .icon3 { width: 400; height: 200; resize:contain; top: 5;}
+</style>

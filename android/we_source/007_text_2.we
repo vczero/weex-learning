@@ -1,0 +1,13 @@
+<template>
+   <div>
+	<text style="font-style: italic;">我是text标签</text>
+	<text style="font-weight: bold;">我是text标签</text>
+	<text style="color :#ff00ff; text-decoration: underline;">我是text标签</text>
+   </div>
+</template>
+
+<style>
+</style>
+
+<script>
+</script>
