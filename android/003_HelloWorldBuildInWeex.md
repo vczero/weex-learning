@@ -1,4 +1,5 @@
-## 开发HelloWorld程序（Weex开发）
+## 开发HelloWorld程序（Weex开发）      
+作者：@guogai         
 - 1.新建一个Module(一个Module就相当于一个app)
 
         如果已经有一个Project，那么可以直接新建一个Module，如果没有先去新建一个Project。

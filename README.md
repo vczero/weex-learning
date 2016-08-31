@@ -10,40 +10,45 @@
 这里，我先"拿砖敲门"，给希望入门的同学做一个指引，然后一起Happy，一起共建生态。        
 
 
-## 入门     
-### 体验         
-1. [weex初体验](http://vczero.github.io/weex/001_helloworld.html)      
-2. [了解Weex源码结构，修改example](http://vczero.github.io/weex/002_modify_example.html)       
-
-### 开发 
-1. [初始化工程干了一件什么事儿](http://vczero.github.io/weex/003_init_project.html)                       
-2. 了解工程（webpack & package.json）    
-3. 模版   
-4. 样式 & 布局  
-5. 发挥JavaScript的能力     
-6. 动态数据服务（可理解Ajax、Fetch）      
-7. 页面跳转／路由控制    
-8. 开发上层UI组件     
+## WEEX    
+### WEEX快速入门        
+1. [weex初体验](https://vczero.github.io/weex-learning/001_helloworld.html)      
+2. [了解Weex源码结构，修改example](https://vczero.github.io/weex-learning/002_modify_example.html)       
+3. [初始化工程干了一件什么事儿](https://vczero.github.io/weex-learning/003_init_project.html)                       
+4. [了解工程](https://vczero.github.io/weex-learning/004_project.html)    
+5. [模版、样式、JavaScript](https://vczero.github.io/weex-learning/005_t_s_s.html)   
+6. [导航、页面跳转、stream、webview](https://vczero.github.io/weex-learning/006_navigation.html)  
+    
 
 ### 工程化
 1. 工程化代码       
 2. 工程化套件         
 
-## 应用参考        
-1. 微阅读应用 (即将发布)         
+### 应用参考        
+1. [微阅读应用](https://github.com/vczero/weex-yy)         
 2. 丫丫学字应用（开发中）         
 
-## 组件的扩展   
+### 组件的扩展   
 1. H5扩展     
 2. iOS扩展    
 3. Android 扩展     
 4. 发布你的组件        
 
-## 提出问题、解决问题      
+### 提出问题、解决问题      
 1. 总结问题并抽象     
 2. 回到开源社区             
 
-## 常见问题汇总和过滤    
+### 常见问题汇总和过滤    
   
 
-## Android相关    
+## Android相关            
+其实不应该说Weex for Android, Weex for iOS, Weex for H5.因为,Weex本来就打通了三端一致.但是,业界也存在一个问题,那就是同时能够熟练掌握Android, iOS,前端的同学很少.
+这也归于一句话:术业有专有专攻.因此,Weex Android相关指南是Android同学写给前端同学或者iOS同学看的入门指南,更多的是涉及Android相关的话题.这一块,Android的同学做的要专业些.         
+开发者社区本来就需要不同的声音,因此也希望更多的开发者积极贡献社区.        
+这里由开发者[guogailee](https://github.com/guogailee)贡献
+
+### 目录
+- [前言](http://vczero.github.io/weex/android/004_Preface.html)
+- [环境配置](http://vczero.github.io/weex/android/001_EnvironmentConfig.html)
+- [开发HelloWorld程序（Android原生）](http://vczero.github.io/weex/android/002_HelloWorldBuildInNative.html)
+- [开发HelloWorld程序（Weex开发）](http://vczero.github.io/weex/android/003_HelloWorldBuildInWeex.html) 
