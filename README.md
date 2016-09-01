@@ -48,7 +48,7 @@
 这里由开发者[guogailee](https://github.com/guogailee)贡献
 
 ### 目录
-- [前言](http://vczero.github.io/weex/android/004_Preface.html)
-- [环境配置](http://vczero.github.io/weex/android/001_EnvironmentConfig.html)
-- [开发HelloWorld程序（Android原生）](http://vczero.github.io/weex/android/002_HelloWorldBuildInNative.html)
-- [开发HelloWorld程序（Weex开发）](http://vczero.github.io/weex/android/003_HelloWorldBuildInWeex.html) 
+- [前言](http://vczero.github.io/weex-learning/android/004_Preface.html)
+- [环境配置](http://vczero.github.io/weex-learning/android/001_EnvironmentConfig.html)
+- [开发HelloWorld程序（Android原生）](http://vczero.github.io/weex-learning/android/002_HelloWorldBuildInNative.html)
+- [开发HelloWorld程序（Weex开发）](http://vczero.github.io/weex-learning/android/003_HelloWorldBuildInWeex.html) 
