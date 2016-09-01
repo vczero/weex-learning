@@ -9,3 +9,7 @@
 - [环境配置](http://vczero.github.io/weex/android/001_EnvironmentConfig.html)
 - [开发HelloWorld程序（Android原生）](http://vczero.github.io/weex/android/002_HelloWorldBuildInNative.html)
 - [开发HelloWorld程序（Weex开发）](http://vczero.github.io/weex/android/003_HelloWorldBuildInWeex.html)
+- [公共属性、公共样式、公共事件](http://vczero.github.io/weex/android/005_common.html)
+- [div标签](http://vczero.github.io/weex/android/006_div.html)
+- [text标签](http://vczero.github.io/weex/android/007_text.html)
+- [image标签](http://vczero.github.io/weex/android/008_image.html)
