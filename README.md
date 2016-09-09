@@ -55,4 +55,4 @@
 - [公共属性、公共样式、公共事件](https://vczero.github.io/weex/android/005_common.html)
 - [div标签](https://vczero.github.io/weex/android/006_div.html)
 - [text标签](https://vczero.github.io/weex/android/007_text.html)
-- [image标签](https://vczero.github.io/weex/android/008_image.html)
+- [image标签](https://vczero.github.io/weex/android/008_image.html)  
