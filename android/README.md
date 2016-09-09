@@ -5,11 +5,11 @@
 这里由开发者[guogailee](https://github.com/guogailee)贡献
 
 ## 目录
-- [前言](https://vczero.github.io/weex/android/004_Preface.html)
-- [环境配置](https://vczero.github.io/weex/android/001_EnvironmentConfig.html)
-- [开发HelloWorld程序（Android原生）](https://vczero.github.io/weex/android/002_HelloWorldBuildInNative.html)
-- [开发HelloWorld程序（Weex开发）](https://vczero.github.io/weex/android/003_HelloWorldBuildInWeex.html)
-- [公共属性、公共样式、公共事件](https://vczero.github.io/weex/android/005_common.html)
-- [div标签](https://vczero.github.io/weex/android/006_div.html)
-- [text标签](https://vczero.github.io/weex/android/007_text.html)
-- [image标签](https://vczero.github.io/weex/android/008_image.html)
+- [前言](https://vczero.github.io/weex-learning/android/004_Preface.html)
+- [环境配置](https://vczero.github.io/weex-learning/android/001_EnvironmentConfig.html)
+- [开发HelloWorld程序（Android原生）](https://vczero.github.io/weex-learning/android/002_HelloWorldBuildInNative.html)
+- [开发HelloWorld程序（Weex开发）](https://vczero.github.io/weex-learning/android/003_HelloWorldBuildInWeex.html)
+- [公共属性、公共样式、公共事件](https://vczero.github.io/weex-learning/android/005_common.html)
+- [div标签](https://vczero.github.io/weex-learning/android/006_div.html)
+- [text标签](https://vczero.github.io/weex-learning/android/007_text.html)
+- [image标签](https://vczero.github.io/weex-learning/android/008_image.html)
